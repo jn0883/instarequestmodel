@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    position: relative;
+}
+
+#card{
+    height: 450px;
+    width: 300px;
+    background-color: #C4C5C6;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#card img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  
+}
+
+#card h5{
+    margin: 10px 0px 0px 0px;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+#card .description{
+    margin: 8px auto;
+    color: #46424f;
+}
+
+#card button{
+    height: 30px;
+    width: 37%;
+    padding: 5px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    font-weight: 600;
+    border-style: none;
+    border: 2px solid black;
+}
+
+#card i{
+    position: absolute;
+    font-size: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(2);
+    color: white;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+.crsr{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    left: 0;
+    position: absolute;
+    transition: all linear 0.2s;
+}
+.stories{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #dadada;
+    background-color: #C4C5C6;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+.stories::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    margin: 1.5px;
+    border: 3px solid red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
